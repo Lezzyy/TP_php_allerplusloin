@@ -33,7 +33,21 @@
 
     <!-- TU CODES ICI -->
 
+    <header>
+      <div class="container title">
+        <p class="text-center">PLEASE ENTER CORRECT PASSWORD</p>
+      </div>
+    </header>
 
+    <div class="container form">
+      <div class="row">
+      <form action="secret.php" method="post">
+        <input type="text" name="name" placeholder="NAME"></br>
+        <input type="text" name="password" placeholder="PASSWORD"></br>
+        <input type="submit" name="OK" value="OK">
+      </form>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
