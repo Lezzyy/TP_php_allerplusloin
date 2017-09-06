@@ -41,13 +41,23 @@
 
     <div class="container form">
       <div class="row">
-      <form action="secret.php" method="post">
+      <form action="formulaire.php" method="post">
         <input type="text" name="name" placeholder="NAME"></br>
         <input type="text" name="password" placeholder="PASSWORD"></br>
         <input type="submit" name="OK" value="OK">
       </form>
       </div>
     </div>
+
+<?php
+if (!isset($_POST['password']) OR $_POST['password'] != "kangourou"){
+        header('Location: formulaire.php');
+}
+else {
+  echo 'Authorised access'. '<br/>'.' Welcome '. strip_tags($_POST['name']).'<br/>'.'Here the codes : HJOUOIU87654';
+}
+ ?>
+
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
